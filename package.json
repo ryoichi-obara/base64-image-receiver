@@ -1,0 +1,40 @@
+{
+  "name": "base64-image-receiver",
+  "description": "Images receiver that encoded with BASE64",
+  "version": "1.0.0",
+  "author": "ryoichi-obara",
+  "dependencies": {
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "aws-sdk": "^2.517.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-source-map-support": "^2.1.1",
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-loader": "^3.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "serverless-webpack": "^5.3.1",
+    "source-map-support": "^0.5.13",
+    "webpack": "^4.39.3",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "keywords": [
+    "aws",
+    "base64",
+    "lambda"
+  ],
+  "license": "MIT",
+  "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryoichi-obara/base64-image-receiver.git"
+  },
+  "scripts": {
+    "deploy": "sls deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
