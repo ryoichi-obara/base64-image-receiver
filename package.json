@@ -10,13 +10,17 @@
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "ava": "^2.3.0",
     "aws-sdk": "^2.517.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-source-map-support": "^2.1.1",
+    "coveralls": "^3.0.6",
+    "dotenv": "^8.1.0",
     "eslint": "^6.2.2",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-loader": "^3.0.0",
     "eslint-plugin-import": "^2.18.2",
+    "nyc": "^14.1.1",
     "serverless-webpack": "^5.3.1",
     "source-map-support": "^0.5.13",
     "webpack": "^4.39.3",
@@ -35,6 +39,7 @@
   },
   "scripts": {
     "deploy": "sls deploy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc ava -v",
+    "test:watch": "npm test -- --watch"
   }
 }
