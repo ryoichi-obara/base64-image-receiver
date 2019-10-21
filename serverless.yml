@@ -12,7 +12,7 @@ frameworkVersion: ">=1.4.0"
 provider:
   name: aws
   profile: ${opt:profile, self:custom.defaultProfile}
-  runtime: nodejs8.10
+  runtime: nodejs10.x
   stackName: 'base64-image-receiver'
   apiName: 'base64-image-receiver'
   stage: prod
