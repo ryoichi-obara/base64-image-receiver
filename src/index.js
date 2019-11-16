@@ -22,7 +22,7 @@ const response = (statusCode, body) => ({
 // main
 
 exports.handler = async (event) => {
-  // console.log(JSON.stringify(event));
+  console.log(JSON.stringify(event));
   const body = JSON.parse(event.body);
   // console.log(body);
 
