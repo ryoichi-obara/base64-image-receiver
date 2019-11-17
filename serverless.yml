@@ -62,3 +62,10 @@ functions:
             - X-Amz-Security-Token
           allowCredentials: false
     cloudwatchLog: '/aws/lambda/${self:service}'
+
+resources:
+  Resources:
+    ReceiverLogGroup:
+      Type: AWS::Logs::LogGroup
+      Properties:
+        RetentionInDays: 30
